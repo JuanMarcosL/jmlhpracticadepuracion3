@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Prueba {
     public static void main(String[] args) {
         Scanner sn = new Scanner(System.in);
@@ -8,9 +10,11 @@ public class Prueba {
         // Creamos un array de caracteres usando el metodo de String
         char caracteres[] = frase.toCharArray();
         // Recorremos la frase y cogemos cada caracter y lo metemos en el array
-        for (int i = 1; i < frase.length(); i++) {
-            System.out.println("En la posicion del array : " + i + 1 + "tenemos el caracter : " +
-                    caracteres[i + 1]);
+        for (int i = 0; i < frase.length(); i++) { // se iguala i=0
+            System.out.println("En la posicion del array : " + i + " tenemos el caracter : " // quitamos el +1 para que
+                                                                                             // no lo muestre en
+                                                                                             // pantalla
+                    + caracteres[i]); // se quita el +1 de la variable, para que muestre la posición real
         }
     }
 }
