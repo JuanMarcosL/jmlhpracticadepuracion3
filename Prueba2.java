@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Prueba2 {
     public static void main(String[] args) {
         // Indicamos el tamaño
@@ -18,8 +20,8 @@ public class Prueba2 {
     }
 
     public static void mostrarArray(int lista[]) {
-        for (int i = 0; i < lista.length - 1; i++) {
-            System.out.println("En el indice " + i + " esta el valor " + lista[i + 1]);
+        for (int i = 0; i < lista.length; i++) { // se quita el -1 de length
+            System.out.println("En el indice " + i + " esta el valor " + lista[i]);
         }
     }
 }
